@@ -31,7 +31,7 @@ def make_html_pages_from_md(dir_):
     for f in files:
         with open(os.path.join(dir_, f), "r") as md:
             text = "".join(line for line in md.readlines())
-            content = markdown.markdown(text)
+            content = markdown.markdown(text, extensions=["attr_list"])
 
         html_dest = "build/html"
         mkdir_if_not_exists(html_dest)
