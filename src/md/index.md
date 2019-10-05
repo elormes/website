@@ -1,4 +1,4 @@
-![Samurai alone](../images/alone.jpg){: .img-fluid }
+![Ninja sling shot](images/ninja slingshot.png){: .img-fluid .img-small }
 
 ## Recent Posts
 [About](about.html)

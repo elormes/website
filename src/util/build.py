@@ -21,7 +21,7 @@ def copy(src, dest):
             print("Directory not copied: Error {}".format(e))
 
 def make_html_pages_from_md(dir_):
-    html_dest = "build/html"
+    html_dest = "build"
     with open(BASE_HTML, "r") as f:
         base = "".join(line for line in f.readlines())
 
@@ -46,8 +46,6 @@ if __name__ == "__main__":
     # check if in root folder
     assert os.path.basename(os.getcwd()) == "website"
     mkdir_if_not_exists("build")
-
-    build_dirs = ["build/html"]
 
     src_dest_tuples = [["src/css", "build/css"],
                 ["src/fonts", "build/fonts"],

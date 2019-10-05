@@ -2,7 +2,7 @@
 
 Hey! Here lies the source for my personal website. The site design was inspired by my love of Japanese ink wash paintings. They rock!
 
-The site pages are authored in markdown and converted into static html pages by a custom python script. I wrote the script over a night, so there is a lot of weird stuff like hardcoded directory paths, etc in it. I would be cleaning up the script and adding features as time goes on. However, I would always prioritize creating site content over improving the script.
+Page contents are authored in markdown and converted into static html pages by a custom python script. I wrote the script over a night, so there is a lot of weird stuff like hardcoded directory paths, etc in it. I would be cleaning up the script and adding features as time goes on. However, I would always prioritize creating site content over improving the script.
 
 ## Requirements
 * Python
@@ -14,7 +14,7 @@ Run the commands below on the command line. Remember not to include the dollar s
 * First check out the repo using
  `$ git clone https://github.com/elormes/website.git`
 
-* You might want to create a [virtual environment](https://realpython.com/python-virtual-environments-a-primer/) before running the next step.
+* You might want to create a [virtual environment](https://realpython.com/python-virtual-environments-a-primer/) before running the next command
   `$ pip install -r requirements.txt`
 
 * Then
