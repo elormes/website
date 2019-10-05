@@ -35,6 +35,11 @@ cite {
 	display: block;
 }
 
+.title>a, .title>a:visited, .title>a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 .navlinks {
 	margin-top: 0;
 	padding: 0;
