@@ -1,6 +1,6 @@
 # Code for my website
 
-Hey! Here lies the source for my personal website. The site design was inspired by my love of Japanese ink wash paintings. They rock!
+Hey! Here lies the source for my personal website, [elormes.github.io](https://elormes.github.io). The site design was inspired by my love of Japanese ink wash paintings. They rock!
 
 Page contents are authored in markdown and converted into static html pages by a custom python script. I wrote the script over a night, so there is a lot of weird stuff like hardcoded directory paths, etc in it. I would be cleaning up the script and adding features as time goes on. However, I would always prioritize creating site content over improving the script.
 
