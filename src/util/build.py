@@ -21,6 +21,7 @@ def copy(src, dest):
             print("Directory not copied: Error {}".format(e))
 
 def make_html_pages_from_md(dir_):
+    html_dest = "build/html"
     with open(BASE_HTML, "r") as f:
         base = "".join(line for line in f.readlines())
 
@@ -33,7 +34,6 @@ def make_html_pages_from_md(dir_):
             text = "".join(line for line in md.readlines())
             content = markdown.markdown(text, extensions=["attr_list"])
 
-        html_dest = "build/html"
         mkdir_if_not_exists(html_dest)
         page_name = f.split(".")[0] + ".html"
         with open(os.path.join(html_dest, page_name), "w") as webpage:
