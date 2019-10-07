@@ -1,5 +1,5 @@
 ![Samurai alone](images/alone.jpg){: .img-fluid }
 
 ##  Posts
-* [About](about.html)
+New posts would be coming by the end of this week. Thanks for your patience :)
 
