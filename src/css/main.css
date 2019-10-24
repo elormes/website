@@ -35,6 +35,9 @@ cite {
 	display: block;
 }
 
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 .title>a, .title>a:visited, .title>a:hover {
 	color: inherit;
 	text-decoration: inherit;

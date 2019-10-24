@@ -1,4 +1,4 @@
-![Samurai drawing sword](images/samurai sword.png){: .img-fluid .img-small }
+![Samurai drawing sword](https://i.imgur.com/E95XIv3.png){: .img-fluid .img-small }
 
 ## About
 Hi. I'm Elorm and someday I'll be a <strike>fucking</strike> good software engineer.
