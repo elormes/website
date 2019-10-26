@@ -1,6 +1,10 @@
 ![Birds on a tree](https://i.imgur.com/4k9UQqF.png){: .img-fluid }
 
 ##  Useful Links
+* [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
+<br>
+Practical information about improving software security
+
 * [What nobody tells you about documentation](https://www.divio.com/blog/documentation/)
 <br>
 Guide to writing good software documentation
@@ -23,3 +27,7 @@ Some remarks on science, pseudoscience, and learning how to not fool yourself.
 * [The Little Book of Semaphores \[PDF\]](http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf)
 <br>
 Introduction of principles of synchronization for concurrent programming
+
+* [Designing Data-Intensive Applications](https://dataintensive.net/)
+<br>
+The big ideas behind building reliable, scalable, and maintainable systems
