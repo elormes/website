@@ -1,7 +1,7 @@
 Links and Books
 ![Birds on a tree](https://i.imgur.com/4k9UQqF.png){: .img-fluid }
 
-##  Useful Links
+#  Useful Links
 * [How to Design a Good API and Why It Matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
 
 * [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
@@ -26,7 +26,7 @@ Get started contributing to open source
 <br>
 Some remarks on science, pseudoscience, and learning how to not fool yourself.
 
-##  Useful Books
+#  Useful Books
 * [The Little Book of Semaphores \[PDF\]](http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf)
 <br>
 Introduction of principles of synchronization for concurrent programming
