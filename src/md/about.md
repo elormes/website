@@ -1,3 +1,4 @@
+About
 ![Samurai drawing sword](https://i.imgur.com/E95XIv3.png){: .img-fluid .img-small }
 
 ## About

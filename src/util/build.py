@@ -31,13 +31,14 @@ def make_html_pages_from_md(dir_):
 
     for f in files:
         with open(os.path.join(dir_, f), "r") as md:
+            page_title = md.readline()
             text = "".join(line for line in md.readlines())
             content = markdown.markdown(text, extensions=["attr_list"])
 
         mkdir_if_not_exists(html_dest)
         page_name = f.split(".")[0] + ".html"
         with open(os.path.join(html_dest, page_name), "w") as webpage:
-            webpage.writelines(base.format(body=content))
+            webpage.writelines(base.format(title=page_title, body=content))
 
 
 

@@ -1,3 +1,4 @@
+Burning CPU
 ![Ninja sling shot](https://i.imgur.com/zOt4jXD.png){: .img-fluid .img-small }
 
 ## Recent Posts
