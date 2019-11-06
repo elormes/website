@@ -11,7 +11,7 @@ BUILD_DIR = "build"
 MD_DIR = f"{SRC_DIR}/md"
 
 # list of folders in SRC_DIR to be copied to BUILD_DIR
-ASSET_DIRS = ["css", "fonts", "images", "posts"]
+ASSET_DIRS = ["css", "fonts", "images"]
 
 # preload base html
 with open("src/html/base.html", "r") as f:
