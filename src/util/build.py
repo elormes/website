@@ -5,11 +5,21 @@ import shutil
 import markdown
 
 
-BASE_HTML = "src/html/base.html"
+ROOT = "website"
+SRC_DIR = "src"
+BUILD_DIR = "build"
+MD_DIR = f"{SRC_DIR}/md"
 
-def mkdir_if_not_exists(dir_):
-    if not os.path.isdir(dir_):
-        os.mkdir(dir_)
+# list of folders in SRC_DIR to be copied to BUILD_DIR
+ASSET_DIRS = ["css", "fonts", "images"]
+
+# preload base html
+with open("src/html/base.html", "r") as f:
+    base_html = "".join(line for line in f.readlines())
+
+def mkdir_if_not_exists(directory):
+    if not os.path.isdir(directory):
+        os.mkdir(directory)
 
 def copy(src, dest):
     try:
@@ -20,44 +30,41 @@ def copy(src, dest):
         else:
             print("Directory not copied: Error {}".format(e))
 
-def make_html_pages_from_md(dir_):
-    html_dest = "build"
-    with open(BASE_HTML, "r") as f:
-        base = "".join(line for line in f.readlines())
+def get_md_files(directory):
+    for dirpath, _, filenames in os.walk(directory):
+        for f in filenames:
+            filepath = os.path.abspath(os.path.join(dirpath, f))
+            if filepath.endswith(".md"):
+                yield filepath
 
-    files = [f for f in os.listdir(dir_)
-             if os.path.isfile(os.path.join(dir_, f))
-             and f.endswith(".md")]
-
-    for f in files:
-        with open(os.path.join(dir_, f), "r") as md:
-            page_title = md.readline()
-            text = "".join(line for line in md.readlines())
-            content = markdown.markdown(text, extensions=["attr_list"])
-
-        mkdir_if_not_exists(html_dest)
-        page_name = f.split(".")[0] + ".html"
-        with open(os.path.join(html_dest, page_name), "w") as webpage:
-            webpage.writelines(base.format(title=page_title, body=content))
-
+def page_source_from_md(markdown_file):
+    with open(markdown_file, "r") as md:
+        page_title = md.readline() # first line of markdown file reserved for page title
+        text = "".join(line for line in md.readlines())
+        content = markdown.markdown(text, extensions=["attr_list"])
+    
+    return base_html[:].format(title=page_title, body=content)
 
 
 if __name__ == "__main__":
 
-    # check if in root folder
-    assert os.path.basename(os.getcwd()) == "website"
-    mkdir_if_not_exists("build")
+    # check if script was launched from root folder
+    assert os.path.basename(os.getcwd()) == ROOT
 
-    src_dest_tuples = [["src/css", "build/css"],
-                ["src/fonts", "build/fonts"],
-                ["src/images", "build/images"]]
+    mkdir_if_not_exists(BUILD_DIR)
 
-    # copy resources to build
-    for t in src_dest_tuples:
-        copy(t[0], t[1])
+    # copy assets to build
+    for dirname in ASSET_DIRS:
+        copy(f"{SRC_DIR}/{dirname}", f"{BUILD_DIR}/{dirname}")
 
-    md_dir = "src/md/"
-    assert os.path.isdir(md_dir)
-    
-    make_html_pages_from_md(md_dir)
+    assert os.path.isdir(MD_DIR)
 
+    # convert markdown to html and write to html files in BUILD_DIR
+    for filepath in get_md_files(MD_DIR):
+        basedir, filename = os.path.split(filepath)
+        webpage_name = filename.split(".")[0] + ".html"
+        dest = f"{BUILD_DIR}/{basedir.split(MD_DIR)[-1]}"
+        mkdir_if_not_exists(dest);
+
+        with open(os.path.join(dest, webpage_name), "w") as webpage:
+            webpage.writelines(page_source_from_md(filepath))
