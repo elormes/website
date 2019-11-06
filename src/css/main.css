@@ -38,6 +38,7 @@ cite {
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:visited { color: blue } 
 
 
 .title, .title:visited, .title:hover {

@@ -2,5 +2,5 @@ Posts
 ![Samurai alone](images/alone.jpg){: .img-fluid }
 
 # Archive
-New posts would be coming soon. Thanks for your patience :)
+[GCC How-To Guides](posts/gcc_howto.html)
 

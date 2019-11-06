@@ -1,9 +1,15 @@
 Resources
 ![Birds on a tree](images/birds.png){: .img-fluid }
 
-# Links
-* [How to Design a Good API and Why It Matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+A collection of resourceful stuff I have come across on the web, grouped into:
+<br>
+[Books](#books)
+<br>
+[Videos](#videos)
+<br>
+[Articles and Websites](#articles)
 
+# Articles and Websites ## {: #articles }
 * [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
 <br>
 Practical information about improving software security
@@ -26,7 +32,10 @@ Get started contributing to open source
 <br>
 Some remarks on science, pseudoscience, and learning how to not fool yourself.
 
-# Books
+# Videos ## {: #videos }
+* [How to Design a Good API and Why It Matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+
+# Books ## {: #books }
 * [The Little Book of Semaphores \[PDF\]](http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf)
 <br>
 Introduction of principles of synchronization for concurrent programming
