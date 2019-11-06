@@ -1,5 +1,5 @@
 Resources
-![Birds on a tree](https://i.imgur.com/4k9UQqF.png){: .img-fluid }
+![Birds on a tree](images/birds.png){: .img-fluid }
 
 # Links
 * [How to Design a Good API and Why It Matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
