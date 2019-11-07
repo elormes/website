@@ -41,7 +41,7 @@ def page_source_from_md(markdown_file):
     with open(markdown_file, "r") as md:
         page_title = md.readline() # first line of markdown file reserved for page title
         text = "".join(line for line in md.readlines())
-        content = markdown.markdown(text, extensions=["attr_list"])
+        content = markdown.markdown(text, extensions=["attr_list", "fenced_code", "codehilite"])
     
     return base_html[:].format(title=page_title, body=content)
 

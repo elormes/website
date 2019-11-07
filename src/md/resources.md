@@ -1,13 +1,8 @@
 Resources
 ![Birds on a tree](images/birds.png){: .img-fluid }
 
-A collection of resourceful stuff I have come across on the web, grouped into:
-<br>
-[Books](#books)
-<br>
-[Videos](#videos)
-<br>
-[Articles and Websites](#articles)
+Browse resources by:
+[Books](#books) | [Videos](#videos) | [Articles and Websites](#articles)
 
 # Articles and Websites ## {: #articles }
 * [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
