@@ -38,8 +38,7 @@ cite {
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
-a:visited { color: blue } 
-
+a:visited { color: blue; } 
 
 .title, .title:visited, .title:hover {
 	color: inherit;
@@ -72,6 +71,12 @@ a:visited { color: blue }
 
 .img-small {
 	max-width: 300px;
+}
+
+.codehilite {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 6px;
 }
 
 /* Larger than phablet */
