@@ -76,7 +76,6 @@ a:visited { color: blue; }
 .codehilite {
   padding-left: 0.5em;
   padding-right: 0.5em;
-  border-radius: 6px;
 }
 
 /* Larger than phablet */
