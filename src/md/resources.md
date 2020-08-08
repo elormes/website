@@ -38,3 +38,7 @@ Introduction of principles of synchronization for concurrent programming
 * [Designing Data-Intensive Applications](https://dataintensive.net/)
 <br>
 The big ideas behind building reliable, scalable, and maintainable systems
+
+* [A Philosophy of Software Design](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design)
+<br>
+
